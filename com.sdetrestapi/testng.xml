@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="restassuredtestsuite">
+<listeners>
+<listener class-name="com.sdetrestapi.employee.utilities.Listeners"/>
+
+</listeners>
+  <test thread-count="5" name="EmployeesRestApiTest">
+  <classes>
+  
+  <class name="com.sdetrestapi.employee.testCases.TC001_GET_All_EMPLOYEEE"/>
+  <class name="com.sdetrestapi.employee.testCases.TC002_GET_SINGEL_EMPLOYEE"/>
+  <class name="com.sdetrestapi.employee.testCases.TC003_POST_EMPLOYEE_RECORD"/>
+  <class name="com.sdetrestapi.employee.testCases.TC004_PUT_EMPLOYEE_RECORD"/>
+  <class name="com.sdetrestapi.employee.testCases.TC005_DELETE_EMPLOYEE_RECORD"/>
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
